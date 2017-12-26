@@ -15,6 +15,12 @@ import javax.persistence.Id;
 @RequiredArgsConstructor
 public class Restaurant {
 
+    public Restaurant(String name, String address, String telephone) {
+        this.name = name;
+        this.address = address;
+        this.telephone = telephone;
+    }
+
     @Id
     public String id;
     @NonNull
